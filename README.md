@@ -8,12 +8,31 @@ dataset from Kaggle.
 1. Create a virtual environment: `python -m venv venv`
 2. Activate it: `venv\Scripts\activate` (Windows) or `source venv/bin/activate` (Mac/Linux)
 3. Install dependencies: `pip install -r requirements.txt`
-4. Download the dataset from [Kaggle](https://www.kaggle.com/competitions/ieee-fraud-detection) and place `train.csv` and `test.csv` inside a `data/` folder
+4. Add the dataset to a `data/` folder (see Data section below)
 5. Run: `python classifier.py`
+
+## Data
+Download the dataset from Kaggle:
+[IEEE-CIS Fraud Detection](https://www.kaggle.com/competitions/ieee-fraud-detection)
+
+**Option 1 — Download directly from Kaggle:**
+1. Download `train.csv` and `test.csv`
+2. Place both files inside a `data/` folder
+
+**Option 2 — Use the provided zip files:**
+1. Unzip `train.zip` and `test.zip`
+2. Place the extracted `train.csv` and `test.csv` inside a `data/` folder
+
+Expected folder structure:
+data/
+train.csv
+test.csv
 
 ## File Manifest
 1. `classifier.py` — Main executable. Includes all code for data preprocessing, model training, evaluation, and visualization.
 2. `requirements.txt` — All required packages and versions.
+3. `train.zip` — Zipped training dataset.
+4. `test.zip` — Zipped test dataset.
 
 ## Results
 
